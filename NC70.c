@@ -1,5 +1,6 @@
-// µ¥Á´±íÅÅĞò
+// ÂµÂ¥ÃÂ´Â±Ã­Ã…Ã…ÃÃ²
 
+// similar to Bubble Sort
 struct ListNode* sortInList(struct ListNode* head ) 
 {
     struct ListNode* pi,* pj;
