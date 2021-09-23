@@ -1,12 +1,16 @@
-// µ¥Á´±íÅÅÐò
+// 单链表的排序
 
-// similar to Bubble Sort
 struct ListNode* sortInList(struct ListNode* head ) 
 {
-    struct ListNode* pi,* pj;
-    for (pi = head;pi->next != NULL;pi = pi->next)
+    if (head ==NULL)
+        return head;
+    
+    struct ListNode *pi = head;
+    struct ListNode *pj = head;
+    
+    for (pi = head;pi != NULL;pi = pi->next)
     {
-        for (pj = pi->next;pj != NULL;pj = pj->next)
+        for (pj = pi; pj != NULL;pj = pj->next)
         {
             if (pi->val > pj->val)
             {
@@ -16,5 +20,6 @@ struct ListNode* sortInList(struct ListNode* head )
             }
         }
     }
+    
     return head;
 }
